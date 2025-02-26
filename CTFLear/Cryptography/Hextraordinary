@@ -1,0 +1,7 @@
+Pada challenge Hextraordinary ini, kita diberikan sebuah clue berupa paragraf sebagai berikut :
+Meet ROXy, a coder obsessed with being exclusively the worlds best hacker. She specializes in short cryptic hard to decipher secret codes. The below hex values for example, she did something with them to generate a secret code, can you figure out what? Your answer should start with 0x.
+Lalu dibawah paragraf tersebut, terdapat 2 buah kode hexadecimal yaitu 0xc4115 dan 0x4cf8.
+Saat meihat clue, saya tertuju pada kata ROXy, dimana kata ini merupakan plesetan dari XOR. Singkatnya XOR adalah operasi logika yang membandingkan 2 nilai biner.
+Disini saya menggunakan perintah python3 untuk membalikkan 2 buah kode hexa tersebut dengan command :
+  print(hex(0xc4115 ^ 0x4cf8))
+Setelah saya run, maka muncul flag dari challenge tersebut, yaitu 0xc0ded.
